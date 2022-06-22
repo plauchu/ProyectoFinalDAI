@@ -1,0 +1,50 @@
+-- Base de datos: Rodrigofy
+
+-- Inserción de tuplas
+
+-- Tabla: Usuarios.
+insert into Usuarios values ('a', 'Alexis Peña', 'a', 'DomA', '01'); 
+insert into Usuarios values ('b', 'Brayan Beckeles', 'b', 'DomB', '02'); 
+insert into Usuarios values ('c', 'Carlos Guzman', 'c', 'DomC', '03'); 
+insert into Usuarios values ('d', 'Dieter Villalpando', 'd', 'DomD', '04'); 
+insert into Usuarios values ('e', 'Eduardo Herrera', 'e', 'DomE', '05'); 
+insert into Usuarios values ('g', 'Gabriel Peñalba', 'g', 'DomG', '06'); 
+
+-- Tabla: Usuarios.
+insert into Compras values ('a', 1,'2019-01-24', 12.0);
+insert into Compras values ('a', 2,'2019-01-25', 12.0);
+insert into Compras values ('b', 6,'2019-01-13', 12.0);
+insert into Compras values ('c', 1,'2019-02-01', 12.0);
+insert into Compras values ('c', 9,'2019-03-20', 12.0);
+insert into Compras values ('d', 10,'2019-01-30', 12.0);
+insert into Compras values ('e', 4,'2019-04-05', 12.0);
+insert into Compras values ('g', 5,'2019-06-15', 12.0);
+insert into Compras values ('g', 8,'2019-07-14', 12.0);
+
+-- Tabla: Artísta.
+insert into Artísta values (1, 'Adele', 'Británica');
+insert into Artísta values (2, 'David Bowie', 'Británica');
+insert into Artísta values (3, 'Anuel AA', 'Puerto Rico');
+insert into Artísta values (4, 'Ozuna', 'Puerto Rico');
+insert into Artísta values (5, 'J Balvin', 'Colombia');
+insert into Artísta values (6, 'Bad bunny', 'Puerto Rico');
+insert into Artísta values (7, 'Luis Miguel', 'Mexicana');
+insert into Artísta values (8, 'Freddy Mercury', 'Británica');
+insert into Artísta values (9, 'Sech', 'Puerto Rico');
+insert into Artísta values (10, 'Bob Dylan', 'Británica');
+insert into Artísta values (11, 'Stevie Wonder', 'Americana');
+
+--- Tabla de Canciones.
+insert into Canciones values (1, 6, 'La canción', 12.0);
+insert into Canciones values (2, 6, 'Callaita', 12.0);
+insert into Canciones values (3, 3,'China', 12.0);
+insert into Canciones values (4, 4,'Adicto', 12.0);
+insert into Canciones values (5, 9,'Otro trago', 12.0);
+insert into Canciones values (6, 1,'Someone like you', 12.0);
+insert into Canciones values (7, 2,'Heroes', 12.0);
+insert into Canciones values (8, 7,'Por debajo de la mesa', 12.0);
+insert into Canciones values (9, 8,'Under pressure', 12.0);
+insert into Canciones values (10, 10,'Like a Rolling Stone', 12.0);
+insert into Canciones values (11, 11,'I wish', 12.0);
+
+

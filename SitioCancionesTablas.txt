@@ -1,0 +1,44 @@
+-- Base de datos: Rodrigofy
+
+-- Creación de tablas.
+
+-- Tabla: Usuarios.
+create table Usuarios
+(IdUsuario	char(13)  primary key,
+Nombre		char(50),
+Contraseña	char(12),
+Domicilio	char(50),
+Teléfono	char(13));
+
+--- Tabla: Compra (representa un vínculo M-N entre Usuarios y Canciones).
+create table Compras
+(IdUsuario	char(13),
+IdCanción	int,
+		primary key (IdUsuario, IdCanción),
+Fecha		date, -- Fecha de compra.
+Cargo		money);	
+
+--- Tabla de Canciones.
+create table Canciones
+(IdCanción	int,
+IdArtísta	int,
+	primary key(IdCanción, IdArtísta),
+Nombre		char(50),
+Precio		money);
+
+-- Tabla: Carrito (es entidad débil con respecto a Usuarios).
+create table Carrito
+(IdUsuario	char(13) references Usuarios,	-- Se indica que es carrito del usuario.
+Folio		int,	    -- La clave del carrito siempre es la misma puesto que solo se tiene un carro por usuario.
+		primary key (IdUsuario,Folio),
+Nombre		char(50),
+Precio	money);
+
+-- Tabla: Artísta.
+create table Artísta
+(IdArtísta	int,
+		primary key (IdArtísta),
+Nombre		char(50),
+Nacionalidad	char(50));
+
+
